@@ -3,9 +3,9 @@ lsi: false
 pygments: true
 
 relative_source: ../captor/
-destination: ../zsivienna.github.io/
+destination: ../captor/
 
-github_user: ZSIVienna
+github_user: zsivienna
 source_repo: captor
 destination_repo: zsivienna.github.io
 
