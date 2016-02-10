@@ -4,7 +4,7 @@ lsi: false
 highlighter: 'pygments'
 
 relative_source: ../captor/
-destination: ./
+destination: ./_site/
 
 github_user: zsivienna
 source_repo: captor
