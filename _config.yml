@@ -4,7 +4,7 @@ lsi: false
 highlighter: 'pygments'
 
 relative_source: ../captor/
-destination: ./_site
+destination: ./
 
 github_user: zsivienna
 source_repo: captor
@@ -39,7 +39,7 @@ description: >
     Air pollution is THE environmental topic that European citizens worry about most.
     It is responsible for 400,000 premature deaths in Europe each year,
     and puts considerable damage to agriculture as well as our natural environment.
-baseurl: ""
+baseurl: "captor/"
 url: "http://zsivienna.github.io"
 
 # Build settings
