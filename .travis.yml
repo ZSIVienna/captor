@@ -1,0 +1,22 @@
+#language: ruby
+#install:
+#  # - export PATH="$HOME/pandoc:$PATH"
+#  # - mkdir $HOME/pandoc
+#  # - curl -O https://s3.amazonaws.com/rstudio-buildtools/pandoc-1.12.3.zip
+#  # - unzip -j pandoc-1.12.3.zip pandoc-1.12.3/linux/debian/x86_64/pandoc
+#  #     -d $HOME/pandoc
+#  # - chmod +x $HOME/pandoc/pandoc
+#  # - pandoc --version
+#  - bundle install
+#script: bundle exec rake site:deploy --quiet
+
+language: haskell
+install:
+ - bundle install
+ - travis_retry cabal install
+script: bundle exec rake site:deploy
+
+env:
+  global:
+    secure: "ZIJQyDVSu2oB+X3SJE4XDTOka9uUxp1vXVEmvHS1cMXjr3lqR8Q+qnPkcHYUfRgBZwn+YBCjWnqItK9uLlReMqneFhrM7qe05E2ZLmwqcyyiw5weltD1NO2XR5956H3YTkJbpIWIm1LuLBfjEvb5rk7nANPgDsBN8X+iQxFW22O43fhDzX7KKG1J4ipN+ilbZ6K6CD+R9lGaCItSLevRp+CuZxnDMW9XiEPvquuHSG6B3ZrjDps/EG3lQbiDwiOlS7jRpZJdJ8rQHlBvcK3okqOnVFSvQprHSq72+EjafqXZEhXMkiee7ary/PdS/GRtxaanhVZNkJLDM/seD6/QpxZ9HAFM2wl480t0RA3I2s2h5cwxyDFPA8hjmAzOvnIYJ3uHgmcnV6FI4LcsiNmPcPorsfH2sMbAx5V8ToCHhCq6u3r6QRw9urZpSaUhP1OQkfJjjptyjDZsYf/gWA49xRa+LHR+qVuBwZxySAk+mZeMCCpIkTuq4h43anVPgC4Y8CQkl0R/I8fit1EMaYMXCdm/LPJaBj1nkQPkDrlias2s7rU0LD7yKsYKIEMgnRG3s/7E4LOnQh/5Cuitd34tSlasjdhTYOkcKKxsanLsVkZYTQ8m5a6mni2is69uX3jg2/0BMbL9DqAouebBDGIhIa0QG5lFbiFjxavELtKnLow="
+
