@@ -10,10 +10,9 @@
 #  - bundle install
 #script: bundle exec rake site:deploy --quiet
 
-language: haskell
+language: ruby
 install:
  - bundle install
- - travis_retry cabal install
 script: bundle exec rake site:deploy
 
 env:
