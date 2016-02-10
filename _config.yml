@@ -3,7 +3,7 @@ lsi: false
 highlighter: 'pygments'
 
 relative_source: ../captor/
-#destination: ../captor/
+destination: _site
 
 github_user: zsivienna
 source_repo: captor
@@ -19,6 +19,11 @@ destination_repo: zsivienna.github.io
 username: zsivienna
 repo: captor
 branch: master
+
+branches:
+  only:
+  - gh-pages
+  - /pages-(.*)/
 
 permalink: none
 
