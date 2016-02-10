@@ -1,7 +1,16 @@
 language: ruby
 install:
 - bundle install
-script: bundle exec rake site:deploy
+#script: bundle exec rake site:deploy
+script: bundle exec jekyll build
+branches:
+  only:
+    - gh-pages     
+    - /pages-(.*)/ 
+
 env:
   global:
-    secure: gF3I79y73L27kdOVob0lMTxHkienCn86lbNvQ2erGQfd+UEuvrZqp7qKG/alosLlY9Q1vHlixORbbVSOEOfWF+S1hC0YrsQCXKF/Ll840ll1a8xNtgl+H+ywl+YzVQ+rTGyCTyqOYRPsULkC7yI4fUxSLUe6WPvkAStbp+SW4clSpFfnTfTzVF+HiCfqwpVHJ8MpF7+99CXFBYbbGyjSzUTg+YGds9dg/tx+5u6tpGUHF1eIr7nqKKI9iLDYb/NPjr7MuWb1iulj4OrEeQTHipp+chsvEk4HI346fFthfrpWvx1aBOyzi+aWYLTbLWuy8B9DiXX6gKFatDJmq2tK10TCEG55N8Rk9qNgOp7r5CQ1z/VqR8VCiQb/YlEWAdlT8kPrJYjogCQXHmGbKS2MDvs/SNE5v+S7r64v6YC/j1gj9Bog/VPC7EqjmLUJLf8ddNg+2b2gH0fvwT8DwWHwxxWuIRJ81ylDLQLrlGx6+rg33aM9Rg2rqLoTHIq4WfPe65KwHYU3fadzBhbazoSmvtFjf+2M39whrftjLtheQcxWederxJDe11OcItaQYO1eKctvxcprwzVqYoxqC/ej6/LzafFB4f5Yc4j+D5//8WRRfG6bD+V5kJiTrjHwKiGeNhNpRvwTupA7HKFj1n5rseoMR2YsinEmE4jEPgDagYI=
+    secure: "S4maj7QvWBHkFlJqcgmV6cfmGq2tgYaEI/Ivn2wC9PYlv8fF7GaF5D5MfrmYXb5ZsOI8GOjAFHEJuAhWR0cUUQS6z0pxOQbBKET2IE216pzX0C8Gkg2M6MU+vIb79xAP21m9RFucSe8y1WN/WpJvI3cn9PeBLB/XCAPjcl6BMU24aW3MehTP7E3KOeBLISygZAglpja0nCUv9nRgoXvLczhZN7yZnP7y44qKAYHcDid1zrJOPo+wWbhSWvX9o/tvZd/m21uNGV6xwaieTbwfWtuBIsnMgaZ4yAy/Chn9kzdrKfYY2PjqncP8CoJKw26dMcds/bAHT6zXuqinimgDTTpnw5LP8RfD0Q4tvXFtrNsliJ1e0p7gBh8Ck0gZkBu8DsoiJWMuZRxo0Whg+dv2jl3xLrnOcfKS2yRsjQVLyXm0gbt+iP6ENKFFTwHJ69AVw+gLI4pjdstZvub/dCxuytyngldfLgY1osGQryybzpACMAVtl0UceGft6hUVzdzZPQG12fMLgjQjEySgwdU7f+vMHGNNVOt/6KFiMlHcSfUK2ot0i5Rp4QOR1+n3bN1oblM4UGbKEPZyfjcDrNl1xAl7aNQpl0QAKb0d99Py+fmF5+HcF9yg6KW3pbcW1QjXNsbv7WSqEpq9gHMUDm8WFmV3KOG+80iYLOmT14hGFSg="
+
+
+exclude: [vendor]
