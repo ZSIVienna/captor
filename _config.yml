@@ -39,7 +39,7 @@ description: >
     Air pollution is THE environmental topic that European citizens worry about most.
     It is responsible for 400,000 premature deaths in Europe each year,
     and puts considerable damage to agriculture as well as our natural environment.
-baseurl: "captor/"
+baseurl: "/captor"
 url: "http://zsivienna.github.io"
 
 # Build settings

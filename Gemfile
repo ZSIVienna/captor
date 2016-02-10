@@ -11,6 +11,7 @@
 
 
 source 'https://rubygems.org'
-gem 'github-pages'
+gem 'jekyll'
 gem 'rake'
+gem 'rake-jekyll'
 gem 'jekyll-press', '~> 0.2.1'
