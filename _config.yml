@@ -1,43 +1,15 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 safe: false
 lsi: false
 pygments: true
 
 relative_source: ../captor/
-destination: ../captor/
+destination: ../zsivienna.github.io/
 
+github_user: ZSIVienna
+source_repo: captor
+destination_repo: zsivienna.github.io
 
-# Site settings
-title: CAPTOR
-email: web@zsi.at
-description: > # this means to ignore newlines until "baseurl:"
-    Air pollution is THE environmental topic that European citizens worry about most.
-    It is responsible for 400,000 premature deaths in Europe each year, 
-    and puts considerable damage to agriculture as well as our natural environment.  
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-#twitter_username: jekyllrb
-#github_username:  jekyll
-
-# Build settings
-markdown: kramdown
-
-# Settings for deploy rake task
-# Username and repo of Github repo, e.g.
-# https://github.com/USERNAME/REPO.git
-# username defaults to ENV['GIT_NAME'] used by Travis
-# repo defaults to USERNAME.github.io
-# Branch defaults to "source" for USERNAME.github.io
-# or "master" otherwise
-username: tingeltangel
-repo: captor
-branch: master
+permalink: none
 
 exclude:
   - README.md
@@ -48,4 +20,19 @@ exclude:
   - "*.Rmd"
   - vendor
   - .travis.yml
+
+title: CAPTOR
+email: dev@zsi.at
+description: > 
+    Air pollution is THE environmental topic that European citizens worry about most.
+    It is responsible for 400,000 premature deaths in Europe each year,
+    and puts considerable damage to agriculture as well as our natural environment.
+baseurl: ""
+url: "http://zsivienna.github.io"
+
+# Build settings
+markdown: kramdown
+
+
+
 
