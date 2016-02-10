@@ -1,12 +1,12 @@
 language: ruby
 install:
 - bundle install
-#script: bundle exec rake site:deploy
-script: bundle exec jekyll build
-branches:
-  only:
-    - gh-pages     
-    - /pages-(.*)/ 
+script: bundle exec rake site:deploy
+#script: bundle exec jekyll build
+#branches:
+#  only:
+#    - gh-pages     
+#    - /pages-(.*)/ 
 
 env:
   global:
