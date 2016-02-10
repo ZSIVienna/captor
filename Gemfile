@@ -8,4 +8,4 @@ source "http://production.cf.rubygems.org/"
 
 gem "rake", "~> 10.1.1"
 gem "jekyll-press", "~> 0.2.1"
-gem 'github-pages', "~> 48"
+gem 'github-pages'
