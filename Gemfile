@@ -5,3 +5,4 @@ gem "json"
 gem 'rake'
 gem 'rake-jekyll'
 gem 'rouge'
+gem 'jekyll-press'
