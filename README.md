@@ -1,2 +1,0 @@
-# captor
-CAPTOR
