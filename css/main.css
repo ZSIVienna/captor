@@ -150,7 +150,7 @@ pre {
 .site-header {
   border-top: 5px solid #424242;
   border-bottom: 1px solid #e8e8e8;
-  min-height: 56px;
+  min-height: 100px;
   position: relative; }
 
 .site-title {
@@ -218,6 +218,11 @@ pre {
 .footer-heading {
   font-size: 18px;
   margin-bottom: 15px; }
+
+.footer-addon {
+  font-size: 10px;
+  padding: 0px;
+  margin: 0px; }
 
 .contact-list,
 .social-media-list {
