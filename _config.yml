@@ -1,7 +1,7 @@
 safe: false
 
 lsi: false
-highlighter: 'pygments'
+#highlighter: 'pygments'
 
 relative_source: ../captor/
 destination: ./_site/
