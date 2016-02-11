@@ -4,3 +4,4 @@ gem 'jekyll'
 gem 'rake'
 gem 'rake-jekyll'
 
+gem 'pygments'
